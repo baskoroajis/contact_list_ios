@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D9C8BFD29BEA7ED005B46D5 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C8BFC29BEA7ED005B46D5 /* Contact.swift */; };
+		0D9C8C0029BEA7FA005B46D5 /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C8BFF29BEA7FA005B46D5 /* ContactViewModel.swift */; };
+		0D9C8C0729BEA801005B46D5 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C8C0329BEA801005B46D5 /* ContactDetailView.swift */; };
+		0D9C8C0829BEA801005B46D5 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C8C0529BEA801005B46D5 /* ContactListView.swift */; };
+		0D9C8C0929BEA801005B46D5 /* ContactListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9C8C0629BEA801005B46D5 /* ContactListItemView.swift */; };
+		0D9C8C0B29BEA83C005B46D5 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D9C8C0A29BEA83C005B46D5 /* data.json */; };
 		0DB65AF429BEA2F80040AEB6 /* TrinityIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB65AF329BEA2F80040AEB6 /* TrinityIOSApp.swift */; };
-		0DB65AF629BEA2F80040AEB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB65AF529BEA2F80040AEB6 /* ContentView.swift */; };
 		0DB65AF829BEA2F90040AEB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB65AF729BEA2F90040AEB6 /* Assets.xcassets */; };
 		0DB65AFB29BEA2F90040AEB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB65AFA29BEA2F90040AEB6 /* Preview Assets.xcassets */; };
 		0DB65B0529BEA2F90040AEB6 /* TrinityIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB65B0429BEA2F90040AEB6 /* TrinityIOSTests.swift */; };
@@ -34,9 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D9C8BFC29BEA7ED005B46D5 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		0D9C8BFF29BEA7FA005B46D5 /* ContactViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		0D9C8C0329BEA801005B46D5 /* ContactDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		0D9C8C0529BEA801005B46D5 /* ContactListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		0D9C8C0629BEA801005B46D5 /* ContactListItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactListItemView.swift; sourceTree = "<group>"; };
+		0D9C8C0A29BEA83C005B46D5 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = "../../Downloads/TechnicalTest 2/data.json"; sourceTree = "<group>"; };
 		0DB65AF029BEA2F80040AEB6 /* TrinityIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrinityIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB65AF329BEA2F80040AEB6 /* TrinityIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrinityIOSApp.swift; sourceTree = "<group>"; };
-		0DB65AF529BEA2F80040AEB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0DB65AF729BEA2F90040AEB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DB65AFA29BEA2F90040AEB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0DB65B0029BEA2F90040AEB6 /* TrinityIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrinityIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +81,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D9C8BFB29BEA7ED005B46D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D9C8BFC29BEA7ED005B46D5 /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D9C8BFE29BEA7FA005B46D5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0D9C8BFF29BEA7FA005B46D5 /* ContactViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0D9C8C0129BEA801005B46D5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D9C8C0229BEA801005B46D5 /* ContactDetail */,
+				0D9C8C0429BEA801005B46D5 /* ContactList */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D9C8C0229BEA801005B46D5 /* ContactDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0D9C8C0329BEA801005B46D5 /* ContactDetailView.swift */,
+			);
+			path = ContactDetail;
+			sourceTree = "<group>";
+		};
+		0D9C8C0429BEA801005B46D5 /* ContactList */ = {
+			isa = PBXGroup;
+			children = (
+				0D9C8C0529BEA801005B46D5 /* ContactListView.swift */,
+				0D9C8C0629BEA801005B46D5 /* ContactListItemView.swift */,
+			);
+			path = ContactList;
+			sourceTree = "<group>";
+		};
 		0DB65AE729BEA2F80040AEB6 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +146,11 @@
 		0DB65AF229BEA2F80040AEB6 /* TrinityIOS */ = {
 			isa = PBXGroup;
 			children = (
+				0D9C8C0A29BEA83C005B46D5 /* data.json */,
+				0D9C8C0129BEA801005B46D5 /* Views */,
+				0D9C8BFE29BEA7FA005B46D5 /* ViewModels */,
+				0D9C8BFB29BEA7ED005B46D5 /* Models */,
 				0DB65AF329BEA2F80040AEB6 /* TrinityIOSApp.swift */,
-				0DB65AF529BEA2F80040AEB6 /* ContentView.swift */,
 				0DB65AF729BEA2F90040AEB6 /* Assets.xcassets */,
 				0DB65AF929BEA2F90040AEB6 /* Preview Content */,
 			);
@@ -232,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DB65AFB29BEA2F90040AEB6 /* Preview Assets.xcassets in Resources */,
+				0D9C8C0B29BEA83C005B46D5 /* data.json in Resources */,
 				0DB65AF829BEA2F90040AEB6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +313,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DB65AF629BEA2F80040AEB6 /* ContentView.swift in Sources */,
+				0D9C8BFD29BEA7ED005B46D5 /* Contact.swift in Sources */,
+				0D9C8C0029BEA7FA005B46D5 /* ContactViewModel.swift in Sources */,
+				0D9C8C0829BEA801005B46D5 /* ContactListView.swift in Sources */,
 				0DB65AF429BEA2F80040AEB6 /* TrinityIOSApp.swift in Sources */,
+				0D9C8C0929BEA801005B46D5 /* ContactListItemView.swift in Sources */,
+				0D9C8C0729BEA801005B46D5 /* ContactDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
