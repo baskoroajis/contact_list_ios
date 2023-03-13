@@ -13,6 +13,11 @@ struct ContactDetailView: View {
     
     @ObservedObject var contactViewModel = ContactViewModel.shared
     
+    
+    var isShowSaveButton: Bool {
+        return contactViewModel.contactDetail.firstName.isEmpty || contactViewModel.contactDetail.lastName.isEmpty
+    }
+    
     var body: some View {
         
         NavigationStack{
@@ -41,6 +46,7 @@ struct ContactDetailView: View {
             .navigationBarItems(
                 trailing:
                     Button("Save", action: {contactViewModel.saveItemByid()})
+                    .disabled(isShowSaveButton)
                     .alert(isPresented:$contactViewModel.isShowSuccessSaveAlert){
                         Alert(
                            title: Text("Success"),

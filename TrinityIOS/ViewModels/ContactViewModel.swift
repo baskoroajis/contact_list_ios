@@ -16,15 +16,10 @@ class ContactViewModel: ObservableObject{
     
     @Published var isShowSuccessSaveAlert:Bool = false
     
-//    @Published var isShowSaveButton:Bool = {
-//        if (self.contactDetail.firstName !== "" && self)
-//    }
     
     init(contacs: [Contact]? = nil, contactDetail: Contact) {
-    
         self.contacs = contacs
         self.contactDetail = contactDetail
-        
     }
     
     func loadContactDataFromJSONfile () {
